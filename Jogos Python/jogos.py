@@ -70,6 +70,7 @@ Python Avançado
 7) Funções
     7.1) def nome_da_funcao(): => definição de função
     7.2) Em Python, a convenção é criarmos funções no padrão snake_case, isto é, cada palavra é iniciada com letras minúsculas e separadas por um underscore (_).
+    7.3) carrega_palavra_secreta(nome_arquivo="frutas.txt") => Esse recurso é possível pois no Python podemos nomear os parâmetros passados.
     
 8) Boas práticas de código
 
