@@ -1,5 +1,5 @@
+from conta import Conta
 
-
-def cria_Conta():
-    print("Testando")
-
+conta = Conta()
+print(Conta(),"\n")
+print(conta)

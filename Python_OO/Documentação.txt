@@ -1,0 +1,13 @@
+Python - Programação Orientada a Objetos (POO)
+
+0) Para importar um classe de um arquivo utilizamos:
+    0.1) from nome_file import nome_classe
+
+1) Declaração de uma classe em Python
+    1.1) (Receita)class Nome_Objeto(bolo a ser feito):
+    1.2) pass => Em algum momento, o usuário escreverá código
+    1.3) Para trabalhar com as classes, ou seja, sabermos o endereço, devemos fazer a seguinte declaração
+        1.3.1) variável = classe()
+        1.3.2) Uma classe é uma especificação de um tipo, definindo valores e comportamentos.
+        1.3.3) Um objeto é uma instância de uma classe onde podemos definir valores para seus atributos.
+        1.3.4) Uma boa analogia é considerar a classe como a receita para a criação de algum prato; por exemplo, um delicioso bolo de cenoura ;-)
