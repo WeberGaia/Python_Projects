@@ -11,3 +11,18 @@ Python - Programação Orientada a Objetos (POO)
         1.3.2) Uma classe é uma especificação de um tipo, definindo valores e comportamentos.
         1.3.3) Um objeto é uma instância de uma classe onde podemos definir valores para seus atributos.
         1.3.4) Uma boa analogia é considerar a classe como a receita para a criação de algum prato; por exemplo, um delicioso bolo de cenoura ;-)
+
+2) As características (atributo) de uma classe são denominadas de atributos
+    2.1) def __init(self) => self é a referência que sabe onde encontrar o endereço do objeto na memória
+    2.2) Sempre quisermos acessar uma váriavel, devemos utilizar o 'self'. É como se fosse um ponteiro para apontar a variável que queremos usar.
+    2.3) self.__numero = numero => tornando o atributo privado. Esse valor só pode ser acessado por um atributo
+OBS: Método serve para acessar um atributo e/ou um objeto
+
+    2.4) Falamos nessa aula sobre a coesão que é ligado ao principio de responsabilidade única. Aprendemos que uma classe deve ter apenas uma
+    responsabilidade (ou deve ter apenas uma razão para existir). Em outras palavras, ela não deve assumir responsabilidades que não são delas.
+        S - Single responsibility principle
+        O - Open/closed principle
+        L - Liskov substitution principle
+        I - Interface segregation principle
+        D - Dependency inversion principle
+
