@@ -1,6 +1,6 @@
 Python - Programação Orientada a Objetos (POO)
 
-0) Para importar um classe de um arquivo utilizamos:
+0) Para importar uma classe de um arquivo utilizamos:
     0.1) from nome_file import nome_classe
 
 1) Declaração de uma classe em Python
@@ -12,13 +12,15 @@ Python - Programação Orientada a Objetos (POO)
         1.3.3) Um objeto é uma instância de uma classe onde podemos definir valores para seus atributos.
         1.3.4) Uma boa analogia é considerar a classe como a receita para a criação de algum prato; por exemplo, um delicioso bolo de cenoura ;-)
 
-2) As características (atributo) de uma classe são denominadas de atributos
+2) As características (atributo) de uma classe são denominadas atributos
     2.1) def __init(self) => self é a referência que sabe onde encontrar o endereço do objeto na memória
+
     2.2) Sempre quisermos acessar uma váriavel, devemos utilizar o 'self'. É como se fosse um ponteiro para apontar a variável que queremos usar.
+
     2.3) self.__numero = numero => tornando o atributo privado. Esse valor só pode ser acessado por um atributo
 OBS: Método serve para acessar um atributo e/ou um objeto
 
-    2.4) Falamos nessa aula sobre a coesão que é ligado ao principio de responsabilidade única. Aprendemos que uma classe deve ter apenas uma
+    2.4) Falamos nessa aula sobre a coesão ligado ao princípio de responsabilidade única. Aprendemos que uma classe deve ter apenas uma
     responsabilidade (ou deve ter apenas uma razão para existir). Em outras palavras, ela não deve assumir responsabilidades que não são delas.
         S - Single responsibility principle
         O - Open/closed principle
@@ -26,3 +28,16 @@ OBS: Método serve para acessar um atributo e/ou um objeto
         I - Interface segregation principle
         D - Dependency inversion principle
 
+    2.5) @property => Propriedade. Substituir o método getter
+        2.5.1) @property
+               def nome(self): => colocar a definição da função com o mesmo do atributo
+        2.5.2) @nome.setter =. Substitui o método setter
+OBS: Para o uso do método setter, utilizamos, a seguinte definição:
+        @nome_atributo.setter
+        def nome_atributo(self):
+            self.__limite = limite
+
+    No arquivo main, declaramos assim:
+    conta(objeto).nome_atributo e/ou para definir os valores => conta(objeto).nome_atributo = 1000
+
+OBS 2: Os atributos DEVEM ser privados
