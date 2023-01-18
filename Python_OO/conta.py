@@ -6,7 +6,6 @@ class Conta:
         self.__saldo = saldo
         self.__limite = limite
 
-
     def extrato(self):
         print("O saldo da conta é R${}".format(self.__saldo))
 
@@ -14,7 +13,8 @@ class Conta:
         self.__saldo += valor
 
     def sacar(self, valor):
-        self.__saldo -= valor
+        if valor <= (self.__saldo + self.__limite):
+            self.__saldo -= valor
 
     def transferencia(self, valor, destino):
         self.sacar(valor)

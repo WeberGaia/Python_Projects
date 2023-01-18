@@ -41,3 +41,11 @@ OBS: Para o uso do método setter, utilizamos, a seguinte definição:
     conta(objeto).nome_atributo e/ou para definir os valores => conta(objeto).nome_atributo = 1000
 
 OBS 2: Os atributos DEVEM ser privados
+
+3) Podemos privar um método de acordo com a seguinte declaração de função => def __nome_metodo()
+
+4) Acessando um método sem a criação de um objeto, através dos métodos estáticos. Ou seja, não precisa do objeto.
+    4.1) @staticmethod => def nome_funcao():
+OBS: nem sempre é necessário e recomendado criar um método pra acessar uma variável. Basta criarmos um atributo, sem uti-
+zar o self, pois criamos um atributo da classe. O atributo faz parte da classe, ou seja, é um atributo estático
+que pode ser usado sem ter criado um objeto.
