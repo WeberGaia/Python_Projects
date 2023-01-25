@@ -42,10 +42,21 @@ OBS: Para o uso do método setter, utilizamos, a seguinte definição:
 
 OBS 2: Os atributos DEVEM ser privados
 
-3) Podemos privar um método de acordo com a seguinte declaração de função => def __nome_metodo()
+3) Podemos privar um método conforme a seguinte declaração de função => def __nome_metodo()
 
 4) Acessando um método sem a criação de um objeto, através dos métodos estáticos. Ou seja, não precisa do objeto.
     4.1) @staticmethod => def nome_funcao():
 OBS: nem sempre é necessário e recomendado criar um método pra acessar uma variável. Basta criarmos um atributo, sem uti-
 zar o self, pois criamos um atributo da classe. O atributo faz parte da classe, ou seja, é um atributo estático
 que pode ser usado sem ter criado um objeto.
+
+========================================================================================================================
+POO Avançado
+1) precisamos usar o __class__ para definir que queremos o atributo de classe
+
+2)Herança
+    2.1) Encerrar o problema de duplicação de atributos
+    2.2) Preciso criar uma classe que tenha todos os atributos que serão usados nas subclasses
+    2.3) classe nome (classe mãe)
+    2.4) Preciso definir um __init__ nas classes mãe e filhas.
+    2.5) Utilizo a função super(). para chamar qualquer método da classe mãe
