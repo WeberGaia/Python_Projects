@@ -39,7 +39,15 @@ OBS: Para o uso do método setter, utilizamos, a seguinte definição:
 
     No arquivo main, declaramos assim:
     conta(objeto).nome_atributo e/ou para definir os valores => conta(objeto).nome_atributo = 1000
+    """
+    @nome.setter
+    def nome(self, novo_nome):
+        self.__nome = novo_nome
 
+    Demonstração de declaração no arquivo main.py utilizando o método setter
+    filme.nome = "300"
+    print(f'O nome do filme é {filme.nome}')
+    """
 OBS 2: Os atributos DEVEM ser privados
 
 3) Podemos privar um método conforme a seguinte declaração de função => def __nome_metodo()
@@ -58,5 +66,8 @@ POO Avançado
     2.1) Encerrar o problema de duplicação de atributos
     2.2) Preciso criar uma classe que tenha todos os atributos que serão usados nas subclasses
     2.3) classe nome (classe mãe)
-    2.4) Preciso definir um __init__ nas classes mãe e filhas.
+    2.4) Preciso definir um __init__ nas classes mãe e filhas e passar os seus respectivos parametros
     2.5) Utilizo a função super(). para chamar qualquer método da classe mãe
+
+3) Polimorfismo
+    3.1)
