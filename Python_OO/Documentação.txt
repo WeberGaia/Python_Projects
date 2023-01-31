@@ -68,6 +68,15 @@ POO Avançado
     2.3) classe nome (classe mãe)
     2.4) Preciso definir um __init__ nas classes mãe e filhas e passar os seus respectivos parametros
     2.5) Utilizo a função super(). para chamar qualquer método da classe mãe
+    2.6) Classes filhas são do mesmo tipo da classe mãe
+    2.7) Ao declarar um atributo, podemos utilizar apenas um underline (self._nome). Isso significa que
+         o atributo não deve ser acessado. Aqui, ele não é considerado privado.
 
 3) Polimorfismo
-    3.1)
+    3.1) hasatrr() => Função que verifica se a classe possui um determinado atributo
+    3.2) hasatrr(objeto, 'atributo')
+    3.3) No polimorfismo, utiliza-se um método com o mesmo nome, em classes diferentes, e obtém-se
+         resultados diferentes.
+    3.4) str => visualização textual para o utilizador
+    3.5) __str__ =>
+    3.6) Um método com o mesmo nome deve fazer parte tanto da classe mãe quanto das filhas
