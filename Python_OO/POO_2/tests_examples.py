@@ -35,17 +35,37 @@ class Serie(Programa):
 
     def __str__(self):
         return f'{self._nome} -  {self.temporadas} temp - {self.likes}'
+
+class Playlist:
+    def __init__(self, nome_playlist, programas):
+        self.nome_playlist = nome_playlist
+        self._programas = programas
+
+    @property
+    def listagem(self):
+        return self._programas
+
+    @property
+    def tamanho(self):
+        return len(self._programas)
+
+
 # ==============================================================================
 filme = Filme("hitch", 2012, 140)  # Objeto
 filme.dar_likes()                  # Método dar likes
 filme.dar_likes()
+filme2 = Filme("PN", 2012, 140)  # Objeto
 
 serie = Serie("lista negra", 2010, 10)
 serie.dar_likes()
 serie.dar_likes()
 serie.dar_likes()
 
-lista = [filme, serie]
+lista = [filme, filme2, serie]
 
-for programa in lista:
-    print(programa)
+play = Playlist('FDS', lista)
+
+for programa in play.listagem:
+    print(f'{programa}')
+
+print(f'O tamanho da lista é {len(play.listagem)}')
