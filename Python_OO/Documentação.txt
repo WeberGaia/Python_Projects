@@ -71,6 +71,9 @@ POO Avançado
     2.6) Classes filhas são do mesmo tipo da classe mãe
     2.7) Ao declarar um atributo, podemos utilizar apenas um underline (self._nome). Isso significa que
          o atributo não deve ser acessado. Aqui, ele não é considerado privado.
+    2.8) Quais as desvantagens de se fazer herança de uma classe que não conhecemos completamente?
+        2.8.1) Pode ter comportamentos indesejados internamente, como métodos dependentes.
+        2.8.2) Não podemos sair modificando tudo, pois podemos criar bugs.
 
 3) Polimorfismo
     3.1) hasatrr() => Função que verifica se a classe possui um determinado atributo
@@ -80,3 +83,18 @@ POO Avançado
     3.4) str => visualização textual para o utilizador
     3.5) __str__ =>
     3.6) Um método com o mesmo nome deve fazer parte tanto da classe mãe quanto das filhas
+
+4) Observações
+    4.1) Uma classe pode herdar uma classe iterável (list, tuple...)
+    4.2) O ideal seria não utilizar o item 4.1.
+
+5) Duck Typing => dando a ideia de que não precisamos necessariamente identificar uma ave para saber se trata-se de um pato ou não, basta sabermos se ela emite o mesmo som que o pato, voa ou anda como ele
+    5.1) __getitem__ => torna um objeto iterável sem a necessidade de herdar de uma classe
+    5.2) Extensão acontece quando temos uma relação é um entre subclasse e superclasse.
+    5.3)
+
+6) Classes abstratas
+    6.1) from abc import ABC(abstract base classes)
+    6.2) Complemento de duck typing
+    6.3) há a ideia de classes e métodos abstratos, que forçam as classes filhas a implementar alguns métodos
+    6.4) DEVO utilizar TODOS os métodos das classes abstratas
