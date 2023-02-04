@@ -34,7 +34,7 @@ OBS: Método serve para acessar um atributo e/ou um objeto
         2.5.2) @nome.setter =. Substitui o método setter
 OBS: Para o uso do método setter, utilizamos, a seguinte definição:
         @nome_atributo.setter
-        def nome_atributo(self):
+        def nome_atributo(self, limite):
             self.__limite = limite
 
     No arquivo main, declaramos assim:
@@ -98,3 +98,9 @@ POO Avançado
     6.2) Complemento de duck typing
     6.3) há a ideia de classes e métodos abstratos, que forçam as classes filhas a implementar alguns métodos
     6.4) DEVO utilizar TODOS os métodos das classes abstratas
+
+7) Herança múltipla
+    7.1) class Funcionario(classe 1, classe2) => Herança de duas classes distintas
+    7.2) Conseguimos reaproveitar comportamentos de vários locais diferentes, podendo organizar melhor as responsabilidades das superclasses.
+    7.3) Esta é a ideia principal. Desta forma, evitamos encher uma classe com tudo que faz sentido compartilhar (isso no caso de só poder herdar uma classe).
+    7.4) MRO => Method Resolution Order. 
