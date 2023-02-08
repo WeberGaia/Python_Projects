@@ -39,10 +39,4 @@ class Filme:
 
 filme1 = Filme("Avengers", 140, 2013)
 filme1.dar_likes()
-filme1.dar_likes()
-filme1.dar_likes()
-filme1.dar_likes()
-filme1.dar_likes()
-filme1.dar_likes()
-
 print(filme1)
